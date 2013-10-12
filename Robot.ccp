@@ -11,13 +11,13 @@ class MyRobot : public SimpleRobot {
   Victor rightVic3;
   Victor rightVic4;
   
-  public {
+  public :
     MyRobot() : 
     leftVic1(PORT_DRIVE_VIC_1),
     leftVic2(PORT_DRIVE_VIC_2),
     rightVic1(PORT_DRIVE_VIC_3),
     rightVic2(PORT_DRIVE_VIC_4);
-  }
+  {}
   
     void Autonomous() {
       leftVic1.Set(0.5);
