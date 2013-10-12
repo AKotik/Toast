@@ -8,15 +8,15 @@
 class MyRobot : public SimpleRobot {
   Victor leftVic1;
   Victor leftVic2;
-  Victor rightVic3;
-  Victor rightVic4;
+  Victor rightVic1;
+  Victor rightVic2;
   
   public :
     MyRobot() : 
     leftVic1(PORT_DRIVE_VIC_1),
     leftVic2(PORT_DRIVE_VIC_2),
     rightVic1(PORT_DRIVE_VIC_3),
-    rightVic2(PORT_DRIVE_VIC_4);
+    rightVic2(PORT_DRIVE_VIC_4)
   {}
   
     void Autonomous() {
