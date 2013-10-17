@@ -22,10 +22,22 @@ class MyRobot : public SimpleRobot {
     void Autonomous() {
       leftVic1.Set(0.5);
       leftVic2.Set(0.5);
+      rightVic1.Set(0.0);
+      rightVic2.Set(0.0);
+      Wait(2.0);
+      
+      leftVic1.Set(0.0);
+      leftVic2.Set(0.0);
       rightVic1.Set(-0.5);
       rightVic2.Set(-0.5);
-      
       Wait(2.0);
+      
+      leftVic1.Set(0.5);
+      leftVic2.Set(0.5);
+      rightVic1.Set(-0.5);
+      rightVic2.Set(-0.5);
+      Wait(4.0);
+      
       leftVic1.Set(0.0);
       leftVic2.Set(0.0);
       rightVic1.Set(0.0);
